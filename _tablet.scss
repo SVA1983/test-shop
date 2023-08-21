@@ -1,0 +1,129 @@
+@media (max-width: 1024px) 
+{
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+    .header__logo {
+        margin-top: 9px;
+    }
+    .title__catalog {
+        margin-top: 127px;
+    } 
+    .title__cart {
+       margin-top: 127px;
+    }
+    .for {
+        &__item {
+            height: 268px;
+            gap: 30px;
+        }
+    }
+    .top_content {
+        .product__box {
+            margin-top: 64px;
+            .heading {
+                width: 729px;
+            }
+            .product__content {
+                column-gap: 29px;
+                row-gap: 39px;
+                margin-bottom: 32px; 
+                .product {
+                    width: 378px;
+                    margin-bottom: 0;
+                    .product_text {
+                        width: 378px;
+                    }           
+                } 
+            }
+            .product_content_catalog {
+                column-gap: 29px;
+                row-gap: 30px;
+                margin-bottom: 0;      
+            }
+        }
+        .product__box-catalog {
+            margin-top: 0;
+        }
+        .link_box {
+            padding-left: 0;
+            margin-bottom: 0;
+            height: 24px;
+        }
+    }
+    
+    /* Корзина */
+
+    .cart {
+        grid-template-columns: repeat(8, 1fr);
+        height: auto;
+        &__form {
+            width: 376px;
+            height: 556px;
+            padding-right: 32px;
+            padding-left: 27px;
+            margin-top: 10px;
+        }
+        &__button_box {
+            margin-top: auto;   
+        }
+    }
+    .form {
+        margin-right: 0;
+    }
+
+    /* Футер */
+
+    .footer {
+        margin-top: 64px;
+        .top_content-catalog {
+            margin-bottom: 0;
+        }
+        .footer_logo {
+            display: none;
+        }
+        .footer_content {
+            align-items: flex-end;
+            width: 834px;
+        }
+    }     
+}
+@media (min-width: 768px) and (max-width: 833px) 
+{  
+    .center 
+    {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .top_content {
+        .product__box {
+            .heading {
+                width: 720px;
+                font-size: 47px;
+            }
+            .product__content {
+                .product {
+                    width: 345px;
+                    .product_text {
+                        width: 345px;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }    
+                }
+            }
+        }   
+    }
+    .form 
+    { 
+        width: 268px;  
+        &__text {
+            width: 265px;
+        }
+        &__email {
+            width: 268px;}
+        &__button {
+            width: 268px;
+        }
+    }
+}
